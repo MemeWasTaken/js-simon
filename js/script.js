@@ -3,7 +3,7 @@
 // 3) Tramite 5 prompt() l'utente deve inserire i numeri visti;
 // 4) Software visualizza quanti e quali numeri sono stati indovinati.
 
-// 1) //
+    // 1) //
 const arrayNumber = [];
 let listNumberDom = document.getElementById('list-number-dom');
 
@@ -15,3 +15,14 @@ for (let i = 0; i < 5; i++) {
     listNumberDom.append(li);
 }
 console.log(arrayNumber);
+
+// 2) //
+setTimeout(waitForIt, 3000);
+function waitForIt () {
+        
+    const arrayGuessed = [];
+    for (let i = 0; i < 5; i++) {
+        let attempts = parseInt(prompt('Inserisci un numero'));
+        arrayGuessed.push(attempts);
+    }
+}
